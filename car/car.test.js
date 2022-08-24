@@ -62,4 +62,9 @@ describe('Car class', () => {
         car.drive(7);
         expect(car.odometer).toBe(17);
     });
+
+    test('car can drive multiple distances', () => {
+        car.drive(50, 5, 10);
+        expect(car.odometer).toBe(65);
+    });
 })
