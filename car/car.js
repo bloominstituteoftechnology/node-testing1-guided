@@ -16,7 +16,7 @@ class Car {
                 this.odometer += distance
                 resolve();
             },
-            distance * 20);
+            distance * 50);
         });
     }
 }
