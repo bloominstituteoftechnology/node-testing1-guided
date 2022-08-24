@@ -22,3 +22,13 @@ test('sanity checks', () => {
 
     expect({ a: 1 }).not.toBe({ a: 1 });
 });
+
+
+const { Car } = require('./car');
+
+describe('Car class', () => {
+    test('Car is defined', () => {
+        expect(Car).toBeDefined();
+        expect(Car).not.toBe(undefined);
+    });
+})
