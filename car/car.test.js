@@ -56,5 +56,6 @@ describe('Car class', () => {
 
     test('car can drive', () => {
         expect(car).toHaveProperty('odometer', 0);
+        expect(car.drive).toBeInstanceOf(Function);
     });
 })
