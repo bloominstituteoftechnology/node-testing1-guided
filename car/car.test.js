@@ -19,4 +19,6 @@ test('sanity checks', () => {
 
     let object = { foo: 'bar' };
     expect(q(object)).toBe(object) // object === object
+
+    expect({ a: 1 }).not.toBe({ a: 1 });
 });
