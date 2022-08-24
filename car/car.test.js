@@ -4,5 +4,5 @@ function f() {
 
 test('sanity checks', () => {
     let unknownValue = f();
-    expect(unknownValue).toBe(43);
+    expect(unknownValue).toBe(42);
 });
