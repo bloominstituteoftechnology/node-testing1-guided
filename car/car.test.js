@@ -3,6 +3,7 @@ function f() {
 }
 
 function q(object) {
+    object.qwerty = 17;
     return object;
 }
 
