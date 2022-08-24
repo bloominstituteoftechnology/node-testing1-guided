@@ -2,6 +2,10 @@ function f() {
     return 42;
 }
 
+function q(object) {
+    return object;
+}
+
 test('sanity checks', () => {
     let unknownValue = f();
     expect(unknownValue).toBe(42);    // unknownValue === 42
@@ -13,5 +17,5 @@ test('sanity checks', () => {
     expect(42).toEqual(42);
 
     let object = { foo: 'bar' };
-    expect(object).toBe(object) // object === object
+    expect(q(object)).toBe(object) // object === object
 });
