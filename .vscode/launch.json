@@ -11,8 +11,8 @@
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "runtimeExecutable": "jest",
-            "args": ["--watch"],
+            "runtimeExecutable": "npx",
+            "args": ["jest --watch"],
             "console": "integratedTerminal"
         }
     ]
