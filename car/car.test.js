@@ -35,8 +35,9 @@ describe('Car class', () => {
         expect(car).toBeInstanceOf(Car) // car instanceof Car
     });
 
+    let car = new Car('Honda', 'Fit');
+
     test('cars have a make and model', () => {
-        let car = new Car('Honda', 'Fit');
         // expect(car.make).toBe('Honda');
         // expect(car).toHaveProperty('make');
         // expect(car).toHaveProperty('model', 'Fit');
@@ -46,7 +47,6 @@ describe('Car class', () => {
     });
 
     test('car can drive', () => {
-        let car = new Car('Honda', 'Fit');
         expect(car).toHaveProperty('odometer', 0);
     });
 })
