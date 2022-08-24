@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "ketchup": "git fetch && git reset --hard origin/lecture",
-    "test": "jest"
+    "test": "jest --verbose"
   },
   "repository": {
     "type": "git",
