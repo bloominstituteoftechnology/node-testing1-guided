@@ -12,7 +12,7 @@
                 "<node_internals>/**"
             ],
             "runtimeExecutable": "npx",
-            "args": ["jest --watch"],
+            "args": ["jest", "--watch"],
             "console": "integratedTerminal"
         }
     ]
