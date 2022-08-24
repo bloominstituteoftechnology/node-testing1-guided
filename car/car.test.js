@@ -10,4 +10,5 @@ test('sanity checks', () => {
     expect(null).toBe(null);
 
     expect({ a: 1 }).toEqual({ a: 1 });
+    expect(42).toEqual(42);
 });
