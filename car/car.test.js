@@ -30,5 +30,8 @@ describe('Car class', () => {
     test('Car is defined', () => {
         expect(Car).toBeDefined();
         expect(Car).not.toBe(undefined);
+
+        let car = new Car();
+        expect(car).toBeInstanceOf(Car) // car instanceof Car
     });
 })
