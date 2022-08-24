@@ -27,6 +27,12 @@ test('sanity checks', () => {
 const { Car } = require('./car');
 
 describe('Car class', () => {
+    let car;
+
+    beforeEach(() => {
+        car = new Car('Honda', 'Fit');
+    });
+
     test('Car is defined', () => {
         expect(Car).toBeDefined();
         expect(Car).not.toBe(undefined);
@@ -34,8 +40,6 @@ describe('Car class', () => {
         let car = new Car();
         expect(car).toBeInstanceOf(Car) // car instanceof Car
     });
-
-    let car = new Car('Honda', 'Fit');
 
     test('cars have a make and model', () => {
         // expect(car.make).toBe('Honda');
