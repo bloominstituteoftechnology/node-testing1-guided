@@ -38,5 +38,8 @@ describe('Car class', () => {
     test('cars have a make and model', () => {
         let car = new Car('Honda', 'Fit');
         expect(car.make).toBe('Honda');
+        expect(car).toHaveProperty('make');
+        expect(car).toHaveProperty('model', 'Fit');
+        expect(car).not.toHaveProperty('jabberwocky');
     });
 })
