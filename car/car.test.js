@@ -46,6 +46,10 @@ describe('Car class', () => {
         expect(car).toMatchObject({ make: 'Honda', model: 'Fit' });
     });
 
+    test('useless test', () => {
+        car.odometer = 1000;
+    });
+
     test('car can drive', () => {
         expect(car).toHaveProperty('odometer', 0);
     });
