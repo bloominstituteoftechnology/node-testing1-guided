@@ -6,8 +6,8 @@ class Car {
         this.odometer = 0;
     }
 
-    drive(distance) {
-        this.odometer += distance;
+    drive(...distance) {
+        this.odometer += distance.reduce((prev, cur) => prev + cur);
     }
 }
 
