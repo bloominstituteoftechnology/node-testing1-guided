@@ -42,7 +42,7 @@ describe('Car class', () => {
         // expect(car).toHaveProperty('model', 'Fit');
         // expect(car).not.toHaveProperty('jabberwocky');
 
-        expect(car).toEqual({ make: 'Honda', model: 'Fit' });
+        expect(car).toMatchObject({ make: 'Honda', model: 'Fit' });
     });
 
     test('car can drive', () => {
