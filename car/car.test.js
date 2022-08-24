@@ -4,8 +4,10 @@ function f() {
 
 test('sanity checks', () => {
     let unknownValue = f();
-    expect(unknownValue).toBe(42); // unknownValue === 42
+    expect(unknownValue).toBe(42);    // unknownValue === 42
     
-    expect('asdf').toBe('asdf'); // 'asdf' === 'asdf'
+    expect('asdf').toBe('asdf');      // 'asdf' === 'asdf'
     expect(null).toBe(null);
+
+    expect({ a: 1 }).toBe({ a: 1 });  // { a: 1 } !== { a: 1 }
 });
