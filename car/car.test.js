@@ -72,5 +72,5 @@ describe('Car class', () => {
         await car.driveAsync(150);
         expect(car.odometer).toBe(150);
     },
-    7000);
+    7600);
 })
