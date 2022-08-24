@@ -11,4 +11,7 @@ test('sanity checks', () => {
 
     expect({ a: 1 }).toEqual({ a: 1 });
     expect(42).toEqual(42);
+
+    let object = { foo: 'bar' };
+    expect(object).toBe(object) // object === object
 });
