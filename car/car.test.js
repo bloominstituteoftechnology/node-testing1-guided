@@ -9,5 +9,5 @@ test('sanity checks', () => {
     expect('asdf').toBe('asdf');      // 'asdf' === 'asdf'
     expect(null).toBe(null);
 
-    expect({ a: 1 }).toBe({ a: 1 });  // { a: 1 } !== { a: 1 }
+    expect({ a: 1 }).toEqual({ a: 1 });
 });
